@@ -6,10 +6,15 @@ using System.Web.Mvc;
 
 namespace Wallet.Web.Controllers
 {
-    public partial class HomeController : Controller
+    public partial class AccountController : Controller
     {
-        // GET: Home
+        // GET: Account
         public virtual ActionResult Index()
+        {
+            return View();
+        }
+
+        public virtual ActionResult Login()
         {
             return View();
         }
